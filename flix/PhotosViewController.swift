@@ -27,8 +27,7 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
         refresh()
     }
     
-    func tableView(tableView:UITableView, numberOfRowsInSection section:Int) -> Int
-    {
+    func tableView(tableView:UITableView, numberOfRowsInSection section:Int) -> Int {
         return medias.count;
     }
     
@@ -53,23 +52,21 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         var detailedPhotoViewController = segue.destinationViewController as DetailedPhotoViewController
-
         var indexPath = tableView.indexPathForCell(sender as UITableViewCell)
+        
         detailedPhotoViewController.photo = medias[indexPath!.row]
     }
-
     
     func refresh() {
         var clientId = "dbd1b0e4190744158b367fbc28ffe81d"
-        
         var url = NSURL(string: "https://api.instagram.com/v1/media/popular?client_id=\(clientId)")!
         var request = NSURLRequest(URL: url)
+        
         NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) { (response: NSURLResponse!, data: NSData!, error: NSError!) -> Void in
             var responseDictionary = NSJSONSerialization.JSONObjectWithData(data, options: nil, error: nil) as NSDictionary
             self.medias = responseDictionary["data"] as [NSDictionary]
             self.tableView.reloadData()
             self.refreshControl?.endRefreshing()
         }
-        
     }
 }

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		682F11C61A83108A00C10947 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682F11C51A83108A00C10947 /* PhotosViewController.swift */; };
 		687406E91A833E1300F11617 /* DetailedPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687406E81A833E1300F11617 /* DetailedPhotoViewController.swift */; };
+		687406EE1A83540200F11617 /* DetailedPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687406ED1A83540200F11617 /* DetailedPhotoCell.swift */; };
 		68777DD51A830FA500834EA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68777DD41A830FA500834EA2 /* AppDelegate.swift */; };
 		68777DDA1A830FA500834EA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68777DD81A830FA500834EA2 /* Main.storyboard */; };
 		68777DDC1A830FA500834EA2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68777DDB1A830FA500834EA2 /* Images.xcassets */; };
@@ -33,6 +34,7 @@
 		682F11C51A83108A00C10947 /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 		687406E51A831BD100F11617 /* flix-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "flix-Bridging-Header.h"; sourceTree = "<group>"; };
 		687406E81A833E1300F11617 /* DetailedPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailedPhotoViewController.swift; sourceTree = "<group>"; };
+		687406ED1A83540200F11617 /* DetailedPhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailedPhotoCell.swift; sourceTree = "<group>"; };
 		68777DCF1A830FA500834EA2 /* flix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68777DD31A830FA500834EA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68777DD41A830FA500834EA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				68777DD81A830FA500834EA2 /* Main.storyboard */,
 				68EF287E1A831700007E0719 /* PhotoCell.swift */,
 				687406E81A833E1300F11617 /* DetailedPhotoViewController.swift */,
+				687406ED1A83540200F11617 /* DetailedPhotoCell.swift */,
 				68777DDB1A830FA500834EA2 /* Images.xcassets */,
 				68777DDD1A830FA500834EA2 /* LaunchScreen.xib */,
 				68777DD21A830FA500834EA2 /* Supporting Files */,
@@ -279,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				687406EE1A83540200F11617 /* DetailedPhotoCell.swift in Sources */,
 				68777DD51A830FA500834EA2 /* AppDelegate.swift in Sources */,
 				68EF287F1A831700007E0719 /* PhotoCell.swift in Sources */,
 				682F11C61A83108A00C10947 /* PhotosViewController.swift in Sources */,

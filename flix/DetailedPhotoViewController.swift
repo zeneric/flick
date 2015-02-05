@@ -45,8 +45,10 @@ class DetailedPhotoViewController: UIViewController, UITableViewDelegate, UITabl
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = UITableViewCell()
-//        cell.detailTextLabel!.text = "WTF"
+        var cell = tableView.dequeueReusableCellWithIdentifier("DetailedPhotoCell") as DetailedPhotoCell
+     
+        var photoViewURL = photo.valueForKeyPath("images.standard_resolution.url") as String
+        cell.photoView.setImageWithURL(NSURL(string: photoViewURL))
         
         return cell
     }
