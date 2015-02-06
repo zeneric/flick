@@ -5,7 +5,7 @@
 ![Image of Flix]
 (http://cdn.makeagif.com/media/2-05-2015/gV8AzR.gif)
 
-**Description**
+**Week 1 Exercise**
 This is a simple iOS instagram clone demo app
 
 **Required**
