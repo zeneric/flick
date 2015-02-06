@@ -8,5 +8,13 @@
 **Description**
 This is a simple iOS instagram clone demo app
 
+**Required**
+PhotosViewController
+Photos Table View
+Photos Detail View
+Pull to Refresh
+
+**Optional**
+
 **Time Spent**
 4.5 hours
