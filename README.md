@@ -9,10 +9,10 @@
 This is a simple iOS instagram clone demo app
 
 **Required**
-*PhotosViewController
-*Photos Table View
-*Photos Detail View
-*Pull to Refresh
+* PhotosViewController
+* Photos Table View
+* Photos Detail View
+* Pull to Refresh
 
 **Optional**
 
